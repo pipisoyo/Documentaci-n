@@ -164,7 +164,9 @@ addProductToCart: (req, res) => {
 
             const cid = req.params.cid;
             const pid = req.params.pid;
+            console.log("🚀 ~ addLogger ~ pid:", pid)
             const quantity = req.body.quantity;
+            console.log("🚀 ~ addLogger ~ quantity:", quantity)
 
             try {
                 await cartsService.updateQuantity(cid, pid, quantity);

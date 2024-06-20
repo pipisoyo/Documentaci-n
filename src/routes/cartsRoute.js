@@ -30,7 +30,7 @@ cartsRoutes.post("/:cid/product/:pid", cartControler.addProductToCart);
  * @name DELETE /carts/:cid/products/:pid
  * @function
  */
-cartsRoutes.delete('/:cid/products/:pid', cartControler.deleteProduct);
+cartsRoutes.delete('/:cid/product/:pid', cartControler.deleteProduct);
 
 /**
  * Ruta para actualizar un carrito.

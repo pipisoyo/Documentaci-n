@@ -13,7 +13,7 @@ import realTimeProducts from "./routes/realTimeProductsRoute.js";
 import { generateProducts } from "./utils/utils.js";
 import { errorHandler } from "./middleweres/errorHandler.middleware.js"
 import { addLogger } from "./utils/logger.js";
-import epecs from "./config/documentation.js"
+import epecs from "./config/docsConfig.js"
 import swggerUoExpress from 'swagger-ui-express'
 // Middlewares
 /**
