@@ -92,7 +92,7 @@ addProductToCart: (req, res) => {
             
             let product = await productsService.getById(pid);
 
-            if (user.role === "premiun" && product.owner === user.email) {
+            if (user.role === "premium" && product.owner === user.email) {
                 req.logger.warn('No puede agregar productos que creaste');
                 return response.errorResponse(res, 404, "No puede agregar productos que creaste");
             }

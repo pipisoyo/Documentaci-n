@@ -47,7 +47,6 @@ export const authUser = (role) => {
            }
 
            const userRole = req.session.user.role;
-           console.log("🚀 ~ return ~ userRole:", userRole)
            
            if (!role.includes(userRole)) {
             console.log("🚀 ~ return ~ role.includes(userRole):", role.includes(userRole));

@@ -74,7 +74,7 @@ const productController = {
             let userRole = req.session.user.role;
             console.log("🚀 ~ addLogger ~ userRole:", userRole)
             let owner = "admin"
-            if ( userRole == "premiun") {
+            if ( userRole == "premium") {
                 owner=req.session.user.email
                 }
             let product = Object.keys(req.body)

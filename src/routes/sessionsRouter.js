@@ -76,10 +76,10 @@ sessionsRouter.get('/current', auth, sessionController.getCurrentUser);
 
 /**
  * Ruta para cambiar a rol premium.
- * @name PUT /premiun/:uid
+ * @name PUT /premium/:uid
  * @function
  */
-sessionsRouter.put('/premiun/:uid', sessionController.premiun);
+sessionsRouter.put('/premium/:uid', sessionController.premium);
 
 /**
  * Exporta los enrutadores de las rutas Sessions.

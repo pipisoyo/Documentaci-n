@@ -218,7 +218,7 @@ mailRestore: (req, res) => {
  * @param {object} res - Objeto de respuesta.
 
  */
-premiun: (req, res) => {
+premium: (req, res) => {
     /**
     * @param {string} req.params.uid - ID del usuario a actualizar.
     */
@@ -231,7 +231,7 @@ premiun: (req, res) => {
                 return response.errorResponse(res, 404, 'No se encuentra el usuario');
             }
 
-            let newRole = user.role === "premiun" ? "user" : "premiun";
+            let newRole = user.role === "premium" ? "user" : "premium";
 
             userModel.updateOne({ _id: uid }, { role: newRole }).then(() => {
                 req.logger.info(`Rol actualizado a ${newRole}`);
